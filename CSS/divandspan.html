@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>div and span</title>
+
+        <style>
+            .bluebox{
+                background-image: url(images/image1.jpg);
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                background-origin: content-box
+                color: white;
+                height: 300px;
+                width: 600px;
+                padding: 16px;
+                border: 10px #e8c14e ridge;
+                outline-style: solid;
+                outline-color: greenyellow;
+                outline-width: thick;
+                margin: 20px;
+            }
+
+            .yellowbox{
+                background-image: url(images/image1.jpg);
+                background-size: 200px 200px;
+                background-origin: padding-box;
+                background-position: center;
+                background-color: rgb(222, 224, 85);
+                color: white;
+                height: 100px;
+                width: 600px;
+                padding: 40px 10px;
+                border-width: 10px 15px 5px 10px;
+                border-color: black green orange yellow;
+                border-style: ridge;
+                margin: 60px 10px 30px 20px;
+            }
+
+            .greenbox{
+                background-color: #31af37;
+                color: white;
+                height: 100px;
+                width: 100px;
+                padding: 30px;
+                border-style: groove;
+                border-color: #28ccb6;
+                border-radius: 100px;
+                margin: 60px 60px;
+
+            }
+
+            .lame{
+                background-color: white;
+                color: #3a5795;
+                height: 100px;
+                width: auto;
+            }
+
+            p{
+                margin: 0;
+                background-color: #8bbbbf;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+        <div class="bluebox"><p>Facebook</p></div>
+        <div class="yellowbox"><p>Apple</p></div>
+        <div class="greenbox"><p>Microsoft</p></div>
+
+    </body>
+
+</html>
