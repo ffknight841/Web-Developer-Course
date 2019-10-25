@@ -8,33 +8,31 @@
 
         <style>
 
-            a:link{
-                color: white;
-            }
-            a:hover{
-                font-size: 3cm;
-                color: white;
-            }
-
-            div.greenbox a:active{
-                font-size: 4cm;
-            }
-
             .bluebox{
                 background-color: #3a5795;
                 color: white;
                 height: 100px;
-                width: auto;
-                /*visibility: hidden;
-                display: none;*/
+                width: 100px;
+                position: relative;
+                animation: myanimation 5s;
+
+            }
+
+            @keyframes myanimation{
+                0% {background: green; left: 0px; top: 0px;}
+                50% {background: red; left: 250px; top: 250px;}
+                100% {background: #3a5795; left: 500px; top: 500px;}
             }
 
             .yellowbox{
                 background-color: rgb(222,224,85);
                 color: white;
                 height: 100px;
-                width: auto;
+                width: 100px;
+                transition: width 1s, height 1s, transform 1s;
             }
+
+            .yellowbox:hover{width: 300px; height: 300px; transform: rotateX(180deg);}
 
             .greenbox{
                 background-color: #31af37;
@@ -52,12 +50,9 @@
     </head>
 
     <body>
-        <div class="bluebox"><p>Facebook is <span class="lame">LAME</span></p></div>
-        <div class="yellowbox"><p>Apple is pretty <span class="lame">COOL</span></p></div>
-        <div class="greenbox">
-            <p>Microsoft</p>
-            <P><a href="http://www.amazon.com">Visit Link</a></P>
-        </div>
+        <div class="bluebox"><p>Facebook</p></div>
+        <div class="yellowbox"><p>Apple</p></div>
+        <div class="greenbox"><p>Microsoft</p></div>
 
     </body>
 
